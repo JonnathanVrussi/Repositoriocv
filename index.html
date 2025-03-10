@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>CV Jonnathan Velasquez </title>
+
+    <style>
+        
+        body{ 
+             /* Inserción de las margenes */
+            margin:0;
+            /* Espaciado interno*/
+            padding: 0;
+            /*color pantalla etiqueta cuerpo */
+            background: #F4FAFF;
+        }  
+        
+        .name{
+            /*ancho*/
+            width:100% ; 
+            /*largo*/
+            height: 300px; 
+            /*Color de fondo div  */
+            background: #DEE7E7;
+            /* Colocar el color de la clase estilo diagonal */
+            transform: skewY(-5deg);
+         }
+
+         /*Creación de una cadena de estilo CSS*/
+         .name .content { 
+            width: 50%;
+            height: 50%;
+            /* Marcador de posición */
+            position:absolute;
+            /*Dirección hacia donde mover el estilo seleccionado */
+            left:25%;
+         }
+         .name .content .p-1 {
+            color:black;
+            /*Estilo de letra asignado desde google fonts*/
+            font-family: "Open Sans", serif;
+            font-weight: bold;
+            /*Tamaño de la letra*/
+            font-size: 45px;
+            /*Evitar el ladeado del texto volviendo a su posición de origen */
+            transform: skewY(5deg);
+            /*Margen para evitar el espacio de abajo(Buttom)*/
+            margin-bottom: 0;
+         }
+         .name .content .p-2 {
+            color:black;
+            font-family: "Open Sans", serif;
+            font-size: 25px;
+            transform: skewY(5deg);
+            /*Margen para evitar el espacio de arriba(top)*/
+            margin-top: 0;
+            margin-bottom: 0;
+         }
+         /* Creación de los estilos de imagen ( Opcional) */
+         .name .img {
+            position: absolute;
+            top:18%;
+            right: 5%;
+            width: 180px;
+            height: 180px;
+            border-radius: 100%;
+            transform: skewY(5deg);
+            /*Redireccionar la imagern*/
+            overflow: hidden;
+         }
+         .name .img img {
+            width:180px ;
+            height: 320px;
+         }
+         .info {
+            width:90%;
+            height: auto;
+            background:   #DEE7E7;
+            /* Colocación de espacio para evitar el cruce con el div anterior */
+            margin: 5% auto;
+            /*Asignación margenes div clase info */
+            padding: 20px;
+            border-radius: 20px;
+         }
+         .info .tituloseccion {
+           color:  black;
+           /*asignación de fondo de texto */ 
+           font-family: 'Gill Sans',  sans-serif;
+           /*asignación de tamaño de la letra*/
+           font-size: xx-large;
+           /* Alineación del texto en la mitad de la página */
+           text-align: center;
+           /*Asignación de la negrilla en el texto */
+           font-weight: bolder;
+           /*Asignación linea debajo del titulo donde "dashed" significa punteado*/
+           border-bottom: 2px  grey dashed ;
+         }
+
+         .info .titulonombre {
+            color:black;
+            font-family:'Gill Sans',  sans-serif ;
+            font-weight: bolder;
+            font-size: large;
+            /* codigo para que quede un elemento seguido de otro*/
+            display: inline;
+            margin-right: 20px;
+         }
+
+         .info .infonombre {
+            color:black;
+            font-family:'Gill Sans',  sans-serif ;
+            font-weight: normal;
+            font-size: large;
+            display: inline;
+         }
+    </style>
+</head>
+<body> 
+    <!--Creación de la división -->
+    <!-- Creación de la clase acerca de perfin laboral en la división -->
+     <div class="name">
+        <!-- Creación de la imagen para la hoja de vida -->
+         <div class="img">
+            <img src="img hoja de vida.jpg" alt="">
+         </div>
+        <!--Creación de la clase interna de la división de clase name-->
+         <div class="content">
+            <!--Creación de la clase para cada uno de los parrafos -->
+            <p class="p-1">Jonnathan Velásquez Russi</p>
+            <p class="p-2"> 20 tantos , Profesional</p>
+        </div>
+    </div> 
+
+     <div class="info">
+        <p class="tituloseccion">Información Personal</p>
+        <p class="titulonombre">Nombres y apellidos:</p>
+        <p class="infonombre">Jonnathan Velásquez Russi</p><br>
+        <p class="titulonombre">Telefono:</p>
+        <p class="infonombre">(+57)3132041010</p><br>
+        <p class="titulonombre">Email:</p>
+        <p class="infonombre">jonnathan.velasquez@teinco.edu.co</p><br>
+
+     </div>
+
+    <div class="info">
+        <p class="tituloseccion">Perfil profesional</p>
+        <p class="infonombre">Técnico en sistemas y estudiante universitario con interés ocupacional en programación orientada a objetos ,
+             diseño web y mantenimiento preventivo de equipos de cómputo. Persona respetuosa, paciente, solidaria, creativa, puntual y 
+             responsable.    Comprometido con las actividades que se asignen. Con alto grado de honestidad y compromiso social. 
+             Adaptación de   equipo fácilmente para realizar las labores y compromisos propuestos.</p>
+    </div>
+
+     <div class="info">
+        <p class="tituloseccion">Educación e información</p>
+        <p class="titulonombre">Básica Primaria:</p>
+        <p class="infonombre">Colegio Giovanni Antonio Farina-2011</p><br>
+        <p class="titulonombre">Básica Secundaria:</p>
+        <p class="infonombre">Colegio Militar Simon Bolivar -2015</p><br>
+        <p class="infonombre">Colegio Giovanni Antonio Farina-2011</p><br>
+        <p class="titulonombre">Educación superior:</p>
+        <p class="infonombre">Corporación Tecnológica Industrial Colombiana (TEINCO) -En curso </p><br>
+
+     </div>
+
+     <div class="info">
+        <p class="tituloseccion">Cursos y certificaciones </p>
+        <li>
+            <p class="infonombre">Programación en páginas web - Universidad Sergio Arboleda (2023)</p><br>
+        </li>
+        <li>
+            <p class="infonombre">Piloto de drones UAV  - DELTA FORCE (2023)</p><br>
+        </li>
+        <li>
+            <p class="infonombre">Nivel A2 Ingles- Universal Languaje (2017)</p><br>
+        </li>
+    
+     </div>
+
+     <div class="info">
+        <p class="tituloseccion">Experiencia laboral</p>
+        <p class="titulonombre">Nombre de la empresa:</p>
+        <p class="infonombre">TEINCO</p><br>
+        <p class="titulonombre">Funciones:</p>
+        <p class="infonombre">Enseñar el área transversal de informática en los ciclos educativos III, IV , V y VI , y educación para adultos
+             los fines de semana , Asegurando el correcto manejo de los equipos de computo en sala de informática y atendiendo dudas con 
+             respecto al manejo de software .</p><br>
+        <p class="titulonombre">Año de labor:</p>
+        <p class="infonombre">2024</p><br>
+        <!--Experiencia laboral 2 -->
+        <p class="titulonombre">Nombre de la empresa:</p>
+        <p class="infonombre">COINCIC S.A.S</p><br>
+        <p class="titulonombre">Funciones:</p>
+        <p class="infonombre">Verificar y comprobar el buen uso de los equipos de cómputo del acueducto, realizando un correcto mantenimiento 
+            preventivo con el objetivo de evitar fallas en el hardware , y tambien realización de pruebas de conexión a la red utilizando 
+        el sistema de consola y las direcciones TCP/IP para el correcto funcionamiento y envio de la información  </p><br>
+        <p class="titulonombre">Año de labor:</p>
+        <p class="infonombre">2021</p><br>
+
+     </div>
+</body>
+</html>
