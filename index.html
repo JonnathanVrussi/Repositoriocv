@@ -133,9 +133,47 @@
             <p class="p-1">duvan felipe mojica alvarez</p>
              <p class="p-2">oscar ivan reyes castro</p>
              <p class="p-3">ivan camilo montaño</p>
-            
+             <p class="p-">ferney duran gonzalez</p>
+             <p class="p-">ronald stid moreno</p>
         </div>
-   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Aleatorios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #randomNumber {
+            font-size: 14px;
+            margin-top: 20px;
+            word-wrap: break-word;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generador de Números Aleatorios</h1>
+    <button onclick="generateRandomNumbers()">Generar Números</button>
+    <p id="randomNumber">Presiona el botón para ver números aleatorios</p>
+
+    <script>
+        function generateRandomNumbers() {
+            let numbers = [];
+            for (let i = 0; i < 1000000; i++) { // Generar 1 millón de números aleatorios
+                numbers.push(Math.floor(Math.random() * 100) + 1);
+            }
+            document.getElementById("randomNumber").textContent = numbers.join(", ");
+        }
+    </script>
 
     
 </body>
